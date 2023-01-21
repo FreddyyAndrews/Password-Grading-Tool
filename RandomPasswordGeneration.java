@@ -7,7 +7,7 @@ public class RandomPasswordGeneration {
     String password;
     //Generate random length for password
     Random rand = new Random();
-    int randomLength = rand.nextInt(15-12) + 12;
+    int randomLength = rand.nextInt(20-18) + 18;
 
     //Constructor that generates random password with an enthropy over 15
     RandomPasswordGeneration(){
@@ -20,7 +20,7 @@ public class RandomPasswordGeneration {
             potentialPassword = generation.getString();
 
             //Checks Password Enthropy
-            if(entropy.calculateEntropy(potentialPassword) > 15){
+            if(entropy.calculateEntropy(potentialPassword) > 30){
                 isValid = true;
             }
 
