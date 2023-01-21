@@ -1,3 +1,5 @@
+![Entrepass Logo](/Assets/logo.png "Entrepass logo")
+
 # Password Generation
 Frederick Andrews' and Jacob Chiu's project for ConU Hacks VII. 
 ---
