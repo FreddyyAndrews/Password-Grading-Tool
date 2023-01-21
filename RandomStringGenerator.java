@@ -10,9 +10,11 @@ public class RandomStringGenerator {
 	}
 	//Method to generate completely randomized passwords of a given length
 	public static String generateRandomString(int len) {
+		//Available characters for password
 		String chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijk"
           +"lmnopqrstuvwxyz!@#$%&";
 		Random rnd = new Random();
+		//Builds String randomly
 		StringBuilder sb = new StringBuilder(len);
 		for (int i = 0; i < len; i++)
 			sb.append(chars.charAt(rnd.nextInt(chars.length())));

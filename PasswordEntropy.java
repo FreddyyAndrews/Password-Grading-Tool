@@ -1,31 +1,12 @@
-//import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Map;
 
 public class PasswordEntropy {
 
+    //Class to test password enthropy
     public double calculateEntropy(String password) {
-        Map<Character, Integer> charFrequency = new HashMap<>();
+        long uniqueChars = password.chars().distinct().count();
         int passwordLength = password.length();
-
-        for (int i = 0; i < passwordLength; i++) {
-            char c = password.charAt(i);
-            charFrequency.merge(c, 1, Integer::sum);
-        }
-
-        double entropy = 0.0;
-        for (int frequency : charFrequency.values()) {
-            double probability = (double) frequency / passwordLength;
-            entropy += probability * (Math.log(probability) / Math.log(2));
-        }
-
-        return entropy;
-    }
-
-    public static boolean checkStrength(double entropy) {
-        // The entropy threshold can be adjusted as per the requirement
-        double threshold = 40; 
-        return entropy >= threshold;
+        //Enthropy = log2(R^L) where R is the number of unique characters and L is the length of the string
+        return Math.log(Math.pow(uniqueChars, passwordLength));
     }
 
 }
