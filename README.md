@@ -8,25 +8,22 @@
 
 ---
 
-<div align="center"style="font-size:30px;">
-  EntraPass
-</div>
+
+# EntraPass
+
 
 This project is based on CSE's challenge to create a web app that helps create more effective passwords. Github was used creatively to realize this project.
 
 ---
 
-<div align="center"style="font-size:30px;">
-  Prompt For Challange
-</div>
+# Prompt For Challange
 
 #### CSE is looking to for ways to help people make more secure passwords or better decisions about cybersecurity such as a Web App to rate the security of a password, display how long it would likely take to crack the password, and allow the user to autogenerate passwords of multiple different formats. Winners would be chosen based on ease of use, quality of suggestions, and innovative approaches to helping people make good decisions about their cybersecurity. Bonus points for making an app that can be run locally without internet access as well as an internet website. Similar tools already exist to the above one but the differentiator here would be generating many different formats of password and running offline.
 
 ---
 
-<div align="center"style="font-size:30px;">
-  What Our Program Does:
-</div>
+
+# What Our Program Does:
 
 - Randomly generate strong passwords using entropy as a measure of strength.
 
@@ -36,13 +33,9 @@ This project is based on CSE's challenge to create a web app that helps create m
 
 - Utilise characters from the Russain alphabet, Greek alphabet, Japanese alphabet, Chinese alphabet, and characters from IPA.
 
-
 ---
 
-<div align="center"style="color:#E03B8B;font-size:27px;">
-  DISCOVER ALL THE HAPPY CATS!
-
-</div>
+# DISCOVER ALL THE HAPPY CATS!
 
 <p align="center">
   <img src="Assets/Cat.gif" alt="">
