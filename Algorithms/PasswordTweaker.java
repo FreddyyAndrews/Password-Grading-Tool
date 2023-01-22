@@ -27,15 +27,15 @@ public class PasswordTweaker {
         double enthropy= passwordEnthropy.calculateEntropy(userEnteredPassword);
 
         if(enthropy>30){
-            System.out.println("Your Password is strong."); 
+            System.out.println("    -Your Password is strong."); 
             makeRecomendation();
         }else if(enthropy<= 30 && enthropy>= 20){
 
-            System.out.println("Your Password is intermediate."); 
+            System.out.println("    -Your Password is intermediate."); 
             makeRecomendation();
             
         }else {
-            System.out.println("Your Password is weak.");
+            System.out.println("    -Your Password is weak.");
             makeRecomendation();
         }
         
@@ -46,7 +46,7 @@ public class PasswordTweaker {
         //Check password length
 
         if(userEnteredPassword.length() < recomendedLength){
-            System.out.println("I recomend you increase your password length");
+            System.out.println("    -I recomend you increase your password length.");
             
             //Make recomended password longer with extra random characters
             RandomStringGenerator addedChars = new RandomStringGenerator(recomendedLength-userEnteredPassword.length());
@@ -61,7 +61,7 @@ public class PasswordTweaker {
         Matcher matcher = pattern.matcher(recomendedPassword);
         boolean isStringContainsSpecialCharacter = matcher.find();
         if(!isStringContainsSpecialCharacter){
-            System.out.println("I recomend you add a special character");
+            System.out.println("    - I recomend you add a special character.");
             String chars = "!@#$%&*^()";
             Random rnd = new Random();
             char c = chars.charAt(rnd.nextInt(chars.length()));
@@ -75,6 +75,7 @@ public class PasswordTweaker {
             Random rnd = new Random();
             char c = uppers.charAt(rnd.nextInt(uppers.length()));
             recomendedPassword = addChar(recomendedPassword, c, rnd.nextInt(recomendedPassword.length()));
+            System.out.println("    -I recomend you add upercase letters.");
         }
 
         if(recomendedPassword.toUpperCase().equals(recomendedPassword)){
@@ -82,6 +83,7 @@ public class PasswordTweaker {
             Random rnd = new Random();
             char c = lowers.charAt(rnd.nextInt(lowers.length()));
             recomendedPassword = addChar(recomendedPassword, c, rnd.nextInt(recomendedPassword.length()));
+            System.out.println("    -I recomend you add lowercase letters.");
         }
 
         //Check if password contains letters and numbers
@@ -98,12 +100,13 @@ public class PasswordTweaker {
             Random rnd = new Random();
             char c = nums.charAt(rnd.nextInt(nums.length()));
             recomendedPassword = addChar(recomendedPassword, c, rnd.nextInt(recomendedPassword.length()));
+            System.out.println("    -I recomend you add numbers.");
         }
 
         //Checks if password is similar to other popular passwords
 
         if(findPasswordSimilarity("wordlist.txt") < userEnteredPassword.length()-userEnteredPassword.length()/2){
-            System.out.println("You have used a default password. I recommend you do not build a password with these keywords.");
+            System.out.println("    -You have used a default password. I recommend you do not build a password with these keywords.");
         }
 
     }
