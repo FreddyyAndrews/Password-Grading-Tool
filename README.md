@@ -29,6 +29,8 @@ This project is based on CSE's challenge to create a web app that helps create m
 
 - Test passwords given with our entropy algorithm.
 
+- Compare password with known word list.
+
 - Tweak passwords to make them better.
 
 - Utilise characters from the Russain alphabet, Greek alphabet, Japanese alphabet, Chinese alphabet, and characters from IPA.
