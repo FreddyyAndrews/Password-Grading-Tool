@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Random;
 import java.util.regex.Matcher; 
 import java.util.regex.Pattern;
@@ -17,10 +19,10 @@ public class PasswordTweaker {
         recomendedPassword = userEnteredPassword;
     }
     //Tests Password quality with entropy
-    //TODO Add levenshtein distance calculations
+    
 
     public void testPassword(){
-        
+
         PasswordEntropy passwordEnthropy = new PasswordEntropy();
         double enthropy= passwordEnthropy.calculateEntropy(userEnteredPassword);
 
@@ -98,6 +100,12 @@ public class PasswordTweaker {
             recomendedPassword = addChar(recomendedPassword, c, rnd.nextInt(recomendedPassword.length()));
         }
 
+        //Checks if password is similar to other popular passwords
+
+        if(findPasswordSimilarity("wordlist.txt") < userEnteredPassword.length()-userEnteredPassword.length()/2){
+            System.out.println("You have used a default password. I recommend you do not build a password with these keywords.");
+        }
+
     }
     //Insert character into string at index
     private String addChar(String str, char ch, int position) {
@@ -113,5 +121,27 @@ public class PasswordTweaker {
     public String getRecommendedPassword() {
         return recomendedPassword;
     }
+
+    private int findPasswordSimilarity(String fileName) {
+
+
+        LevenshteinDistanceDP distance = new LevenshteinDistanceDP();
+        int minDistance = 999;
+
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+               int value = distance.compute_Levenshtein_distanceDP(userEnteredPassword, line);
+               if(value<minDistance){
+                    minDistance = value;
+               }
+            }
+        }catch(Exception e) {
+
+        }
+
+        return minDistance;
   
+    }
+
 }
