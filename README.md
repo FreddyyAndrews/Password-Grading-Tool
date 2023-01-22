@@ -14,7 +14,6 @@
   EntraPass
 </div>
 
-
 This project is based on CSE's challenge to create a web app that helps create more effective passwords. Github was used creatively to realize this project.
 
 ---
@@ -45,9 +44,10 @@ This project is based on CSE's challenge to create a web app that helps create m
 <div align="center"style="color:#E03B8B;font-size:27px;">
   DISCOVER ALL THE HAPPY CATS!
 
-  ![Dance Cat](/Assets/cat.gif "Dance Cat")
+
 </div>
 
+![Dance Cat](/Assets/Cat.gif "Dance Cat")
 
 
 ---
