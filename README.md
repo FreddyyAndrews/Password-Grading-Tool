@@ -44,11 +44,10 @@ This project is based on CSE's challenge to create a web app that helps create m
 <div align="center"style="color:#E03B8B;font-size:27px;">
   DISCOVER ALL THE HAPPY CATS!
 
-
 </div>
-
-![Dance Cat](/Assets/Cat.gif "Dance Cat")
-
+<p align="center">
+  <img src="Assets/Cat.gif" alt="">
+</p>
 
 ---
 
