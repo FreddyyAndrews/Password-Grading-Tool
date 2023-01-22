@@ -35,7 +35,7 @@ This project is based on CSE's challenge to create a web app that helps create m
 
 ---
 
-# DISCOVER ALL THE HAPPY CATS!
+# DISCOVER ALL THE HAPPY CATS!!! <3 <3 <3
 
 <p align="center">
   <img src="Assets/Cat.gif" alt="">
