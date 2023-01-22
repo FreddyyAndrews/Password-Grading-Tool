@@ -14,8 +14,8 @@ public class TestPasswordGeneration {
     }
 
     public String testTweaker() {
-        PasswordTweaker tweaker = new PasswordTweaker("123456");
-        System.out.println(testPasswordEntropy("123456"));
+        PasswordTweaker tweaker = new PasswordTweaker("L6OVE1");
+        System.out.println(testPasswordEntropy("L6OVE1"));
         System.out.println();
         tweaker.testPassword();
         System.out.println(testPasswordEntropy(tweaker.getRecommendedPassword()));
