@@ -1,14 +1,12 @@
+# Frederick Andrews' and Jacob Chiu's project for ConU Hacks VII.
 
 <div align="center"style="font-size:30px;">
-  Frederick Andrews' and Jacob Chiu's project for ConU Hacks VII.
 
 ![Entrepass Logo](/Assets/logo.png "Entrepass logo")
 
 </div>
 
 ---
-
-
 
 <div align="center"style="font-size:30px;">
   EntraPass
@@ -45,6 +43,7 @@ This project is based on CSE's challenge to create a web app that helps create m
   DISCOVER ALL THE HAPPY CATS!
 
 </div>
+
 <p align="center">
   <img src="Assets/Cat.gif" alt="">
 </p>
