@@ -32,7 +32,7 @@ public class Main {
             }
             if(choice.equals("2"))  {
                 System.out.println();
-                System.out.println("Let's see your password.");
+                System.out.println("Let's see your password: ");
                 System.out.println();
                 Scanner scan = new Scanner(System.in);  // Create a Scanner object
                 String password = scan.nextLine();  // Read user input
