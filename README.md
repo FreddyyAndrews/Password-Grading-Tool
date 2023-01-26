@@ -43,4 +43,4 @@ This project is based on CSE's challenge to create a web app that helps create m
 
 ---
 
-###### EntrePass was writen in java 19.0.1 using VS Code and Android Studio in 2023.
+###### EntrePass was writen in java 19.0.1 using VS Code in 2023.
